@@ -1,0 +1,39 @@
+import random
+
+def get_choice():
+    return input("Choose rock, paper, or scissors: ").lower()
+
+def get_winner(p, c):
+    if p == c:
+        return 'draw'
+    elif (p == 'rock' and c == 'scissors') or (p == 'scissors' and c == 'paper') or (p == 'paper' and c == 'rock'):
+        return 'player'
+    else:
+        return 'computer'
+
+player_score = 0
+computer_score = 0
+
+print("First to 3 wins the game!")
+
+while player_score < 3 and computer_score < 3:
+    player = get_choice()
+    computer = random.choice(['rock', 'paper', 'scissors'])
+
+    winner = get_winner(player, computer)
+
+    if winner == 'player':
+        player_score += 1
+        print(f"You win this round! {player} beats {computer}")
+    elif winner == 'computer':
+        computer_score += 1
+        print(f"Computer wins this round! {computer} beats {player}")
+    else:
+        print("It's a draw!")
+
+    print(f"Score → You: {player_score} | Computer: {computer_score}\n")
+
+if player_score == 3:
+    print(" Game Over! Congrats! You won!")
+else:
+    (" Game Over! Computer won.")
