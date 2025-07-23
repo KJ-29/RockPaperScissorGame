@@ -1,4 +1,4 @@
-# RockPaperScissorGame
+
 # Rock Paper Scissors Game (Score-Based) – Python
 
 A simple terminal-based Rock Paper Scissors game built in Python, where the player competes against the computer. The first to score 3 wins, wins the game!
