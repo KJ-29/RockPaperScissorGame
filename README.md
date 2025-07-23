@@ -19,6 +19,7 @@ A simple terminal-based Rock Paper Scissors game built in Python, where the play
 - **Concepts Used:** Loops, conditionals, functions, input/output
 
 ## 🚀 Features
--Randomized computer opponent
--Score tracking: First to 3 wins
--Simple and beginner-friendly logic
+
+- Randomized computer opponent
+- Score tracking: First to 3 wins
+- Simple and beginner-friendly logic
